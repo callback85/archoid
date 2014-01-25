@@ -1,5 +1,7 @@
-Archoid.sh: install archlinux into an android chroot
-====================================================
+Archoid.sh
+==========
+
+Helps you install archlinux into an android chroot.
 
 
 Advantages over similar guides/tools
