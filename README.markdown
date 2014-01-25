@@ -9,7 +9,7 @@ Advantages over similar guides/tools
 
 ### Simplicity
 
-Archoid.sh installs the system into a separte ext2 partition,
+Archoid.sh installs the system into a separate ext2 partition,
 rather than creating a loop device from file during each boot.
 No loop device support is required from your android kernel.
 
@@ -26,15 +26,15 @@ Prerequisites
 Your device:
 
 - has got a large (4gb+) sdcard and a usb storage mode
-- has been rooted + busyboxed properly
+- has been rooted & busyboxed properly
 - has usb debug enabled
 
 
 You:
-- have installed, configured and learned adb + gparted
+- have installed, configured and learned adb & gparted
 - have read, analyzed and understood archoid.sh
 - have a backup of all your precious data
-- are not going to run this from root in a chroot on a real pc
+- are not going to run this as root in a chroot on a real pc
 
 
 Prepare your device
