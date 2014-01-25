@@ -2,14 +2,8 @@ Archoid.sh: install archlinux into an android chroot
 ====================================================
 
 
-Why
----
-
-Just for fun.
-
-
-How is this different from other similar guides/tools out there
----------------------------------------------------------------
+Advantages over similar guides/tools
+------------------------------------
 
 ### Simplicity
 
@@ -27,15 +21,18 @@ You have got the choice of what and how to install.
 Prerequisites
 -------------
 
-- Your device has got a large (4gb+) sdcard and a usb storage mode.
-- Your device has been rooted + busyboxed properly.
-- Your device has usb debug enabled.
+Your device:
 
-- You have installed, configured and learned adb + gparted.
-- You have read, analyzed and understood archoid.sh.
-- You have a backup of all your precious data.
+- has got a large (4gb+) sdcard and a usb storage mode
+- has been rooted + busyboxed properly
+- has usb debug enabled
 
-- You are not going to run this from root in a chroot on a real pc.
+
+You:
+- have installed, configured and learned adb + gparted
+- have read, analyzed and understood archoid.sh
+- have a backup of all your precious data
+- are not going to run this from root in a chroot on a real pc
 
 
 Prepare your device
@@ -57,7 +54,9 @@ Download another image if you have to, this is just the one of my choice.
 First launch
 ------------
 
-$ adb shell su -c 'sh /sdcard/archoid.sh' && adb reboot;
+```shell
+adb shell su -c 'sh /sdcard/archoid.sh' && adb reboot;
+```
 
 Smt fails? Enter a correct $device in archoid.sh and try again.
 
@@ -65,7 +64,9 @@ Smt fails? Enter a correct $device in archoid.sh and try again.
 Next launches
 -------------
 
-$ adb shell su -c 'sh /sdcard/archoid.sh';
+```shell
+adb shell su -c 'sh /sdcard/archoid.sh';
+```
 
 1. Write down the listed addresses of your device
 2. Root-ssh the most accessible address
