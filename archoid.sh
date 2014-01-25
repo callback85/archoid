@@ -14,8 +14,8 @@ then
   device='/dev/block/mmcblk1p2';
   mountpoint='/data/local/mnt';
 
-  mkdir -p "$mountpoint" || exit 1;
-  mount -t ext2 "$device" "$mountpoint" || exit 1;
+  mkdir -p "$mountpoint";
+  mount -t ext2 "$device" "$mountpoint";
   
   for dir in 'dev' 'proc' 'sys';
   do 
@@ -30,12 +30,12 @@ then
     pts "$mountpoint/dev/pts/";
 
   cp \
-    "$(cd "$(dirname "$0")"; pwd -P)/$0" \
-    "$mountpoint/home/root/archoid.sh" || exit 1;
+    "/sdcard/archoid.sh" \
+    "$mountpoint/root/archoid.sh" || exit 1;
 
   chroot "$mountpoint" \
     /usr/bin/su - -c \
-      'bash /home/root/archoid.sh' || exit 1;
+      'bash /root/archoid.sh' || exit 1;
 
 elif test \
   -e '/bin/bash' \
