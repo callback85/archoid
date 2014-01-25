@@ -84,7 +84,3 @@ You are all under shell, without the powers of systemd.
 Still, you have a fully functional gnu/linux system.
 Play around with nginx, node.js, mysql, whatever.
 No warranties on stability or security though.
-
-
-(c) callback85, 2014-01-25, Kyiv, Ukraine
------------------------------------------
